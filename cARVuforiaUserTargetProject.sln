@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cARVuforiaUserTargetProject", "cARVuforiaUserTargetProject.csproj", "{F57ED457-5D72-C87D-D593-AA38E9BB17E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cARVuforiaUserTargetProject.Editor", "cARVuforiaUserTargetProject.Editor.csproj", "{82E430C0-055F-4ED3-B0B3-2180AB92A1CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F57ED457-5D72-C87D-D593-AA38E9BB17E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57ED457-5D72-C87D-D593-AA38E9BB17E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57ED457-5D72-C87D-D593-AA38E9BB17E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57ED457-5D72-C87D-D593-AA38E9BB17E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E430C0-055F-4ED3-B0B3-2180AB92A1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E430C0-055F-4ED3-B0B3-2180AB92A1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E430C0-055F-4ED3-B0B3-2180AB92A1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E430C0-055F-4ED3-B0B3-2180AB92A1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
