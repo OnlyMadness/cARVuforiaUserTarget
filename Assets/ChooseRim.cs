@@ -38,8 +38,16 @@ public class ChooseRim : MonoBehaviour {
                 for (int i = 0; i < parentRim.Length; i++)
                 {            
                     Vector3 pos = rim[i].transform.position;
-                    Quaternion rot = rim[i].transform.rotation;         
+                    Quaternion rot = rim[i].transform.rotation; 
+                    if (i==0)
+                    {
                     GameObject new_rim = Instantiate(objects[Convert.ToInt32(countRim)], pos, rot, parentRim[i].transform);
+                    new_rim.GetComponent<MeshRenderer>().enabled = false;
+                    }
+                    else
+                    {
+                        Instantiate(objects[Convert.ToInt32(countRim)], pos, rot, parentRim[i].transform);
+                    }
                 }
                 for (int i = 0; i < rim.Length; i++)
                 {
@@ -93,7 +101,19 @@ public class ChooseRim : MonoBehaviour {
             {
                 pos = rim[i].transform.position;
                 rot = rim[i].transform.rotation;
-                GameObject new_rim = Instantiate(objects[Convert.ToInt32(countRim) - 1], pos, rot, parentRim[i].transform);
+
+                if (i == 0)
+                {
+                    GameObject new_rim = Instantiate(objects[Convert.ToInt32(countRim) - 1], pos, rot, parentRim[i].transform);
+                    new_rim.GetComponent<MeshRenderer>().enabled = false;
+                }
+                else
+                {
+                    Instantiate(objects[Convert.ToInt32(countRim) - 1], pos, rot, parentRim[i].transform);
+                }
+
+
+                
 
             }
             for (int i = 0; i < rim.Length; i++)
