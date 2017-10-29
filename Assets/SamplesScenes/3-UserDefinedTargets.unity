@@ -989,6 +989,10 @@ Prefab:
       propertyPath: m_DynamicOccludee
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4773492444733398, guid: 8e6e1bc4e62e0a54188e8b3eccb8068b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e6e1bc4e62e0a54188e8b3eccb8068b, type: 2}
   m_IsPrefabParent: 0
@@ -3120,4 +3124,6 @@ MonoBehaviour:
   - {fileID: 1293517917509014, guid: aa2d52bbdd9314f489d6d3a702d31863, type: 2}
   - {fileID: 1103997781535694, guid: 131c999fc6cba484fab551f87479e992, type: 2}
   - {fileID: 1747832240935082, guid: a585ab5b55d660a41b4989fa8d8f123c, type: 2}
+  - {fileID: 1970993406184926, guid: 0ab7ef35e52327347bc8d4680491b593, type: 2}
+  - {fileID: 1725440652718192, guid: a668b0cb0839cc24cb308e66d5bf061b, type: 2}
   _prefabs: {fileID: 0}
