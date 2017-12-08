@@ -8,17 +8,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Script: {fileID: 0}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: 
-    ufoLicenseKey: QVIyNHp2SC8vLy8vQUFBQUtHYzN5Y2RvR2tzVW5mNkNIRmg5bGJoR3p6bkdqYlZaeE1taFFwQXZiMi9Wa1FTUGh3M3cyQ1g2dnkzejlnSkdDVGsyNnM3QTl0a1VpQzhCV2ZSSkRQZFpzdURtTU9FWkhySHBhMW5Pb3VrU0pvUGQwSjJRVURNdkd4c0YvcDE3bHdWOXAvQ29xb1A5ZWZidlo5c2huQ0hxZUdBZGcrZWFSSzJySUd4NEFFZVJiSXo3c0lsR2hYN2lJRWsrNTZyRnRtcVIzdTUzOExnVll5VkVteFVDNjBkdG0zZElHWDBmb1krWUxRU0lQMHpFNzREOGVZcm1zcEZtTWhCSlRCVjQ1elp6RjBWMnJ2cEhEbC9EL2MyNWtiME1OZ1dnYmhBRkI5clJiNWM4cGp3alc1SmNBR0k0NVd1eHl6SWlCWE9rUHVmcDFNYTBlaXg1S2gzTTJEM1ZoMTV0QXdlZkE3WHZiQ0ZPRkozdmNWMEg=
+    ufoLicenseKey: QVJ0VHB1ai8vLy8vQUFBQUtQMVFwRU1aejBscW5JMHFUbFJSTUQyQW00VEVUTXJWL0JtWVRpRmF4OEJaaWpxK2hrWlVKcVMyK3Z4S2VpMTdqbXdhMGhKT2ZGZkJSMC9qZTJHZXpibnUxeUZBL3ZuSWNpWVJZeHlaTXdjdUJPY2Q4LzNpY2FEOCtsWjZ4NXIyNWMvVlZ1aFBka3hoSkJyVVNRMkJyVGlZV0hjZUtFTVNzVHJCTVFBZXFIbGxtb0dsMTJCL21ZcmlIRGxKYzBBa1czRTRvQThwUmdKYzdCTG5zZnFMN004bTZLRzc3QmczS21VR0lubXdLQ1puOXJKY2V2MDRjVnNiVzBCWC9xWHZ1RVZVQVE3OEg5bjV4Q2xvT2xlekthSzBySnkrcWVJMUhoSi9KcmRCS0VVZTZUWTNNZFVZbG5JcitKTDJ5NEJYSXBlbmZ1ZlN3RmROWEd6NFhqRXdwakg4MDd2UFh1cjY2NUZBWFUxbWZ6enQ=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 4
+    maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
-    useDelayedLoadingObjectTargets: 1
+    useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
   digitalEyewear:
@@ -43,8 +43,14 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   databaseLoad:
-    dataSetsToLoad: []
-    dataSetsToActivate: []
+    dataSetsToLoad:
+    - VuforiaMars_Images
+    - VuforiaMars_Object_OT
+    - VuforiaMars_VuMark
+    dataSetsToActivate:
+    - VuforiaMars_Images
+    - VuforiaMars_Object_OT
+    - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -56,7 +62,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
     autoInitBuilder: 0
-    sceneUnitsToMillimeter: 1000
+    sceneUnitsToMillimeter: 0
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
@@ -66,7 +72,7 @@ MonoBehaviour:
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   webcam:
-    deviceNameSetInEditor: Logitech Camera
+    deviceNameSetInEditor: 
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
